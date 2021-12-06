@@ -34,13 +34,13 @@ services:
       - "4443:4443"
       - "4444:4444"
 
-  selenium-docker:
-    image: bps:selenium-docker
-    depends_on:
-      - chrome
-      - firefox
-    environment:
-      - BROWSER=firefox
-      - HUB_HOST=selenium-hub
-    volumes:
-      - ./test-results:/usr/share/seleniumDocker/test-output
+#  selenium-docker:
+#    image: bps:selenium-docker
+#    depends_on:
+#      - chrome
+#      - firefox
+#    environment:
+#      - BROWSER=firefox
+#      - HUB_HOST=selenium-hub
+#    volumes:
+#      - ./test-results:/usr/share/seleniumDocker/test-output
