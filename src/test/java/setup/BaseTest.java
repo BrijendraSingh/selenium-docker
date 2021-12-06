@@ -49,5 +49,6 @@ public class BaseTest {
     @AfterMethod
     public void tearDown(){
         driver.quit();
+        System.out.println("driver is closed");
     }
 }
