@@ -22,8 +22,11 @@ public class BaseTest {
             //BROWSER => chrome/firefox
             //HUB_HOST => http://172.21.0.1:4444
 
-            String hub = "172.18.0.1";
-            String  browser = System.getProperty("BROWSER") ;
+            String hub = "localhost";
+            String browser = "chrome";
+            if (System.getProperty("BROWSER")!=null){
+                browser = System.getProperty("BROWSER") ;
+            }
             if(System.getProperty("HUB_HOST") !=null){
                 hub = System.getProperty("HUB_HOST");
             }

@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 import setup.BaseTest;
 
-public class FirstTest extends BaseTest {
+public class TitleTest extends BaseTest {
     @Test
     public void googleTest(){
         driver.get("https://google.com");
