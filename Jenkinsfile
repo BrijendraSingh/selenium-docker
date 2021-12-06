@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'maven:3-alpine'
-                    args '-v /Users/brijendrasingh/testing-automation/docker/m2/.m2:/root/.m2'
+                    args '-v $HOME/.m2:/root/.m2'
                 }
             }
             steps {
